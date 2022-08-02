@@ -1,9 +1,10 @@
 function loadNavBar() {
    const body = document.querySelector('body');
+   const content = document.querySelector('#content')
    const navBarElement = document.createElement('div');
    navBarElement.classList.add('nav-bar');
 
-   body.appendChild(navBarElement);
+   body.insertBefore(navBarElement, content);
 
    const listElement = document.createElement('ul');
 
