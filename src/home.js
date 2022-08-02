@@ -9,7 +9,7 @@ function loadPage() {
    const subtitleElement = document.createElement('p')
    const buttonElement = document.createElement('button')
 
-   titleElement.textContent = 'IDDna';
+   titleElement.textContent = 'IDDna Restaurant';
    subtitleElement.textContent = 'A pinch of passion in every dish';
    buttonElement.textContent = 'see menu';
 
