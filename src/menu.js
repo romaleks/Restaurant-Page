@@ -1,3 +1,5 @@
+import loadFooter from "./footer";
+
 function loadMenu() {
    const content = document.querySelector('#content');
    const menuElement = document.createElement('div');
@@ -17,6 +19,8 @@ function loadMenu() {
    container.appendChild(createMenuItem('Pasta Carbonara'));
    container.appendChild(createMenuItem('Our Best Pizza'));
    container.appendChild(createMenuItem('Pizza Pepperoni'));
+
+   loadFooter();
 }
 
 function createMenuItem(text) {

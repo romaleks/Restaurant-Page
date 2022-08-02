@@ -19,6 +19,9 @@
 body {
    margin: 0;
    font-family: var(--main-font);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 h1, h2, h3 {
    margin: 0;
@@ -27,9 +30,8 @@ ul {
    padding: 0;
    list-style: none;
 }
-.container {
-   max-width: 1200px;
-   margin: 0 auto;
+#content {
+   flex: 1;
 }
 /* Navigation Bar */
 .nav-bar {
@@ -133,6 +135,8 @@ ul {
    margin: 0 0 1.5rem 0;
 }
 .menu .container {
+   max-width: 1200px;
+   margin: 0 auto;
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
    gap: 2rem;
@@ -179,4 +183,38 @@ ul {
 }
 .dish:nth-child(4) .image {
    background: url(./images/dishes/pepperoni.jpg) center / cover;
+}
+/* Contact */
+.contact {
+   margin-top: 50px;
+   padding: 2rem;
+}
+.contact h1 {
+   text-align: center;
+   font-size: 4rem;
+   margin: 0 0 1.5rem 0;
+}
+.phones {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1000px;
+   margin: 0 auto 2rem;
+}
+.phone h3 {
+   font-size: 2rem;
+}
+.phone p {
+   margin: 0;
+   font-size: 1.5rem;
+}
+.location {
+   text-align: center;
+}
+/* Footer */
+.footer {
+   padding: 1rem 0;
+   text-align: center;
+   background: #000;
+   color: #fff;
+   letter-spacing: 2px;
 }
