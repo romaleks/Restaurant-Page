@@ -22,8 +22,6 @@ function loadContact() {
    phonesRowElement.appendChild(createPhoneItem('+7 (915) 435 127 2334', 'First phone number'));
    phonesRowElement.appendChild(createPhoneItem('1 (877) 832-9309', 'Second phone number'));
    phonesRowElement.appendChild(createPhoneItem('1 (571) 237-7395', 'Third phone number'));
-
-   loadFooter();
 }
 
 function createPhoneItem(phone, text) {

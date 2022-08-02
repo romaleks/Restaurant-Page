@@ -16,6 +16,8 @@ function loadNavBar() {
 
 function createNavItem(text) {
    const listItemElement = document.createElement('li');
+   listItemElement.classList.add('link')
+   listItemElement.setAttribute('id', text);
    listItemElement.textContent = text;
    if (text === 'Home') listItemElement.classList.add('active');
    return listItemElement;

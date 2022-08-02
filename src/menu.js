@@ -19,8 +19,6 @@ function loadMenu() {
    container.appendChild(createMenuItem('Pasta Carbonara'));
    container.appendChild(createMenuItem('Our Best Pizza'));
    container.appendChild(createMenuItem('Pizza Pepperoni'));
-
-   loadFooter();
 }
 
 function createMenuItem(text) {
