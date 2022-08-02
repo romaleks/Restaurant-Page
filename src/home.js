@@ -1,4 +1,4 @@
-function loadPage() {
+function loadHome() {
    const content = document.querySelector('#content');
    const homeElement = document.createElement('div');
 
@@ -18,4 +18,4 @@ function loadPage() {
    homeElement.appendChild(buttonElement);
 }
 
-export default loadPage;
+export default loadHome;
