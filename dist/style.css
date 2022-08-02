@@ -9,24 +9,32 @@
 }
 
 :root {
+   --gray: #e8eddf;
+   --gold: #c9a227;
+
    --title-font: 'Rabbit', serif;
    --main-font: 'Dosis', sans-serif;
 }
-
+/* General */
 body {
    margin: 0;
    font-family: var(--main-font);
 }
+h1, h2, h3 {
+   margin: 0;
+}
 ul {
+   padding: 0;
    list-style: none;
 }
-
+/* Navigation Bar */
 .nav-bar {
    position: fixed;
    top: 0;
    left: 0;
    right: 0;
    background: #000;
+   z-index: 10;
 }
 .nav-bar ul {
    display: flex;
@@ -58,7 +66,7 @@ ul {
 .nav-bar li:hover:after {
    transform: scaleX(1);
 }
-
+/* Home */
 .home {
    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./images/home-bg.jpg') center / cover;
    height: 100vh;
@@ -71,7 +79,6 @@ ul {
    text-align: center;
 }
 .home h1 {
-   margin: 0;
    font-size: 5rem;
 }
 .home p {
@@ -110,4 +117,64 @@ ul {
 .home button:hover:after {
    left: 0;
    right: 0;
+}
+/* Menu */
+.menu {
+   margin-top: 50px;
+   padding: 2rem;
+}
+.menu h1 {
+   text-align: center;
+   font-size: 4rem;
+   margin: 0 0 1.5rem 0;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+   gap: 2rem;
+}
+.dish {
+   display: flex;
+   min-height: 400px;
+   overflow: hidden;
+   cursor: pointer;
+}
+.dish:nth-child(even) {
+   flex-direction: row-reverse;
+}
+.dish .image {
+   flex: 50%;
+   transition: all 0.7s ease;
+}
+.dish .text {
+   flex: 50%;
+   padding: 1.5rem 0.5rem 0 1.3rem;
+   background: var(--gray);
+   font-size: 1.2rem;
+   z-index: 1;
+   transition: all 0.4s ease;
+}
+.dish:hover .image {
+   transform: scale(1.05);
+}
+.dish:hover .text {
+   color: #fff;
+   background: var(--gold);
+}
+.dish h2 {
+   font-size: 2rem;
+}
+.dish:nth-child(1) .image {
+   background: url(./images/dishes/pesto.jpg) center / cover;
+}
+.dish:nth-child(2) .image {
+   background: url(./images/dishes/carbonara.jpg) center / cover;
+}
+.dish:nth-child(3) .image {
+   background: url(./images/dishes/best.jpg) center / cover;
+}
+.dish:nth-child(4) .image {
+   background: url(./images/dishes/pepperoni.jpg) center / cover;
 }
