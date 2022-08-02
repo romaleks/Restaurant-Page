@@ -27,6 +27,10 @@ ul {
    padding: 0;
    list-style: none;
 }
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
 /* Navigation Bar */
 .nav-bar {
    position: fixed;
@@ -128,9 +132,7 @@ ul {
    font-size: 4rem;
    margin: 0 0 1.5rem 0;
 }
-.container {
-   max-width: 1200px;
-   margin: 0 auto;
+.menu .container {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
    gap: 2rem;
