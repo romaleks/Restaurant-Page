@@ -1,5 +1,3 @@
-import loadFooter from "./footer";
-
 function loadMenu() {
    const content = document.querySelector('#content');
    const menuElement = document.createElement('div');

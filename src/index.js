@@ -24,4 +24,14 @@ navBarLinks.forEach(link => link.addEventListener('click', () => {
    else loadContact();
 }));
 
+export default function btnLoadMenu() {
+   const homeLink = document.querySelector('.nav-bar .link');
+   const menuLink = document.querySelector('.nav-bar .link:nth-child(2)');
+   homeLink.classList.remove('active');
+   content.innerHTML = '';
+   footer.style.display = 'block';
+   loadMenu();
+   menuLink.classList.add('active');
+}
+
 footer.style.display = 'none';

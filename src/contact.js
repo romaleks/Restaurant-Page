@@ -1,5 +1,3 @@
-import loadFooter from "./footer";
-
 function loadContact() {
    const content = document.querySelector('#content');
    const contactElement = document.createElement('div');
